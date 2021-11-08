@@ -33,4 +33,8 @@ const getRandPart = (arr) =>{
     return arr[index];
 };
 
-console.log(getRandPart(begin));
+const getRandMsg = () =>{
+    return getRandPart(begin) + ' ' + getRandPart(middle) + ' ' + getRandPart(last) + '.';
+};
+
+console.log(getRandMsg());
